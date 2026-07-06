@@ -42,7 +42,7 @@ class Shifts(Base):
     shift_date = Column(Date)
     start_time= Column(Time)
     end_time = Column(Time)
-    shift_hours = Column(Integer)
+    shift_hours = Column(Float)
     shift_pay = Column(Numeric(10,2))
 
 class Attendance(Base):

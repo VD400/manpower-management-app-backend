@@ -46,7 +46,7 @@ class getShifts(BaseModel):
     shift_date: Optional[date] = None
     start_time: Optional[time] = None
     end_time: Optional[time] = None
-    shift_hours: Optional[int] = None
+    shift_hours: Optional[Decimal] = None
     shift_pay: Optional[Decimal] = None
 
 class addShifts(BaseModel):
@@ -54,7 +54,7 @@ class addShifts(BaseModel):
     shift_date: Optional[date] = None
     start_time: Optional[time] = None
     end_time: Optional[time] = None
-    shift_hours: Optional[int] = None
+    shift_hours: Optional[Decimal] = None
     shift_pay: Optional[Decimal] = None
 
 class getAttendance(BaseModel):
